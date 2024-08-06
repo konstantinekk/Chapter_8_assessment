@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container text-center">
+    <h1>Shop</h1>
+  <div class="row">
+    <div class="col-md-6">
+         <img src="{{ url_for('static', filename='img/apple_watch.jpeg') }}" alt="Apple Watch">
+         <p> 
+            KES 30,000
+            Apple Watch
+         </p>
+    </div>
+    <div class="col-md-6">
+      <img src="{{ url_for('static', filename='img/Macbook.jpeg') }}" alt="Macbook">
+      <p> 
+        KES 250,000
+        MacBook
+      </p>
+    </div>
+  </div>
+</div>
+  {% endblock %}
